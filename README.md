@@ -1,3 +1,4 @@
+```markdown
 # Инструкция по установке Docker
 
 ## Системные требования
@@ -11,71 +12,76 @@
    Убедитесь, что все установленные пакеты на вашей системе обновлены.
    ```bash
    sudo apt update && sudo apt upgrade -y
-Удалите старые версии Docker:
-Если ранее были установлены старые версии Docker, их нужно удалить.
+   ```
 
-bash
-Копировать код
-sudo apt remove docker docker-engine docker.io containerd runc
-Установите необходимые зависимости:
-Установите пакеты для управления репозиториями через HTTPS.
+2. **Удалите старые версии Docker**:  
+   Если ранее были установлены старые версии Docker, их нужно удалить.
+   ```bash
+   sudo apt remove docker docker-engine docker.io containerd runc
+   ```
 
-bash
-Копировать код
-sudo apt install -y ca-certificates curl gnupg lsb-release
-Добавьте ключ GPG Docker:
-Добавьте официальный ключ репозитория Docker.
+3. **Установите необходимые зависимости**:  
+   Установите пакеты для управления репозиториями через HTTPS.
+   ```bash
+   sudo apt install -y ca-certificates curl gnupg lsb-release
+   ```
 
-bash
-Копировать код
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-Добавьте репозиторий Docker:
-Добавьте Docker в список источников APT.
+4. **Добавьте ключ GPG Docker**:  
+   Добавьте официальный ключ репозитория Docker.
+   ```bash
+   sudo mkdir -p /etc/apt/keyrings
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   ```
 
-bash
-Копировать код
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-Обновите список пакетов:
-Обновите список пакетов, чтобы включить новый репозиторий.
+5. **Добавьте репозиторий Docker**:  
+   Добавьте Docker в список источников APT.
+   ```bash
+   echo \
+     "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   ```
 
-bash
-Копировать код
-sudo apt update
-Установите Docker Engine:
-Установите последнюю стабильную версию Docker и дополнительные утилиты.
+6. **Обновите список пакетов**:  
+   Обновите список пакетов, чтобы включить новый репозиторий.
+   ```bash
+   sudo apt update
+   ```
 
-bash
-Копировать код
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-Проверьте установку Docker:
-Убедитесь, что Docker установлен и работает.
+7. **Установите Docker Engine**:  
+   Установите последнюю стабильную версию Docker и дополнительные утилиты.
+   ```bash
+   sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   ```
 
-bash
-Копировать код
-docker --version
-Запустите тестовый контейнер:
-Проверьте работу Docker, запустив тестовый контейнер.
+8. **Проверьте установку Docker**:  
+   Убедитесь, что Docker установлен и работает.
+   ```bash
+   docker --version
+   ```
 
-bash
-Копировать код
-sudo docker run hello-world
-Добавьте пользователя в группу Docker (опционально):
-Чтобы использовать Docker без sudo, добавьте текущего пользователя в группу Docker.
+9. **Запустите тестовый контейнер**:  
+   Проверьте работу Docker, запустив тестовый контейнер.
+   ```bash
+   sudo docker run hello-world
+   ```
 
-bash
-Копировать код
-sudo usermod -aG docker $USER
-Перезапустите терминал или выполните:
+10. **Добавьте пользователя в группу Docker (опционально)**:  
+    Чтобы использовать Docker без `sudo`, добавьте текущего пользователя в группу Docker.
+    ```bash
+    sudo usermod -aG docker $USER
+    ```
 
-bash
-Копировать код
-newgrp docker
-Проверьте запуск Docker без sudo:
-Убедитесь, что команды Docker работают без sudo.
+    Перезапустите терминал или выполните:
+    ```bash
+    newgrp docker
+    ```
 
-bash
-Копировать код
-docker run hello-world
+11. **Проверьте запуск Docker без sudo**:  
+    Убедитесь, что команды Docker работают без `sudo`.
+    ```bash
+    docker run hello-world
+    ```
+
+---
+
+```
