@@ -21,7 +21,7 @@
    ```
 
 3. **Install Required Dependencies**:  
-   Install packages required for managing repositories over HTTPS.
+   Install the necessary packages.
    ```bash
    sudo apt install -y ca-certificates curl gnupg lsb-release
    ```
