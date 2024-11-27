@@ -14,7 +14,7 @@
    sudo apt update && sudo apt upgrade -y
    ```
 
-2. **Remove Old Docker Versions**:  
+2. **Remove Old Docker Versions (if needed)**:  
    If old versions of Docker are installed, remove them.
    ```bash
    sudo apt remove docker docker-engine docker.io containerd runc
