@@ -1,4 +1,4 @@
-```markdown
+
 # Docker Installation Guide
 
 ## System Requirements
