@@ -88,7 +88,6 @@
 
 ## System Requirements
 - **OS**: Windows 10 64-bit Pro, Enterprise, or Education (version 1903 or higher), or Windows 11
-- **Virtualization**: Must be enabled in BIOS
 - **RAM**: Minimum 4 GB
 - **Disk Space**: At least 10 GB free 
 
