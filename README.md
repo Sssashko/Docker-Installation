@@ -90,7 +90,7 @@
 - **OS**: Windows 10 64-bit Pro, Enterprise, or Education (version 1903 or higher), or Windows 11
 - **Virtualization**: Must be enabled in BIOS
 - **RAM**: Minimum 4 GB
-- **Disk Space**: At least 10 GB free
+- **Disk Space**: At least 10 GB free 
 
 ## Installation Steps
 
@@ -101,21 +101,19 @@
 
 2. **Run the Installer**:  
    - Double-click on the downloaded `Docker Desktop Installer.exe`.
-   - Confirm any security prompts (UAC).
    - Select **"Use WSL 2 instead of Hyper-V"** (recommended).
    - Click **"Install"**.
 
 3. **Complete Installation**:  
    - Wait for the installation to finish.
-   - If prompted, restart your computer.
+     When prompted, restart your computer.
 
 4. **Set Up Docker Desktop**:  
-   - Launch **Docker Desktop** from the Start menu.
-   - Accept the terms of service and complete the setup process.
+   - Launch **Docker Desktop** from the Start menu or double click on your desktop shortcut.
    - Ensure **WSL 2** is selected as the backend during setup.
 
 5. **Verify Docker Installation**:  
-   - Open **Command Prompt** or **PowerShell**.
+   - Open **CMD** or **PowerShell**.
    - Check the Docker version:
      ```bash
      docker --version
