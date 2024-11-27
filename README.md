@@ -33,7 +33,7 @@
    ```
 
 5. **Add Docker Repository**:  
-   Add Docker to the APT sources list.
+   Add Docker to the APT sources.
    ```bash
    echo \
      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
