@@ -53,13 +53,13 @@
    ```
 
 8. **Verify Docker Installation**:  
-   Check if Docker is installed and working.
+   Check the Docker version.
    ```bash
    docker --version
    ```
 
 9. **Run a Test Container**:  
-   Test Docker functionality by running a test container.
+   Verify that Docker is working correctly by running a test container.
    ```bash
    sudo docker run hello-world
    ```
