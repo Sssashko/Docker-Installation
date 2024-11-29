@@ -1,5 +1,5 @@
 
-# How To Install Docker On Ubuntu
+# How To Install Docker On Windows
 
 ## Presentation link
 https://pikcrvtlv-my.sharepoint.com/:p:/g/personal/11daostrovskis_rvt_lv/EfwhNJxXY1xFnqXd20iT5fABZN0uLKqVqLV3SZphDH8rcA?e=zDey4B
