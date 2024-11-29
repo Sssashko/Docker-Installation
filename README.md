@@ -21,18 +21,13 @@ https://pikcrvtlv-my.sharepoint.com/:p:/g/personal/11daostrovskis_rvt_lv/EfwhNJx
 
 2. **Run the Installer**:  
    - Double-click on the downloaded `Docker Desktop Installer.exe`.
-   - Confirm any security prompts (UAC).
-   - Select **"Use WSL 2 instead of Hyper-V"** (recommended).
    - Click **"Install"**.
 
 3. **Complete Installation**:  
-   - Wait for the installation to finish.
-   - If prompted, restart your computer.
+   - Wait for the installation to finish and restart your computer.
 
 4. **Set Up Docker Desktop**:  
-   - Launch **Docker Desktop** from the Start menu.
-   - Accept the terms of service and complete the setup process.
-   - Ensure **WSL 2** is selected as the backend during setup.
+   - Launch **Docker Desktop** from the Start menu or desktop
 
 5. **Verify Docker Installation**:  
    - Open **Command Prompt** or **PowerShell**.
