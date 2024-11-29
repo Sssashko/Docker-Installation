@@ -1,5 +1,5 @@
 
-# How To Install Docker On Ubuntu And Windows
+# How To Install Docker On Ubuntu
 
 ## System Requirements
 - **OS**: Linux (Ubuntu 20.04+), Windows 10/11, macOS 10.15+
@@ -80,49 +80,3 @@
     ```bash
     docker run hello-world
     ```
-
----
-
-## Installation on Windows
-
-## System Requirements
-- **OS**: Windows 10 64-bit Pro, Enterprise, or Education (version 1903 or higher), or Windows 11
-- **RAM**: Minimum 4 GB
-- **Disk Space**: At least 10 GB free 
-
-## Installation Steps
-
-1. **Download Docker Desktop**:  
-   - Go to the official [Docker Desktop website](https://www.docker.com/products/docker-desktop).
-   - Click **"Download for Windows"**.
-   - Save the installer (`Docker Desktop Installer.exe`) to your computer.
-
-2. **Run the Installer**:  
-   - Double-click on the downloaded `Docker Desktop Installer.exe`.
-   - Select **"Use WSL 2 instead of Hyper-V"** (recommended).
-   - Click **"Install"**.
-
-3. **Complete Installation**:  
-   - Wait for the installation to finish.
-     When prompted, restart your computer.
-
-4. **Set Up Docker Desktop**:  
-   - Launch **Docker Desktop** from the Start menu or double click on your desktop shortcut.
-   - Ensure **WSL 2** is selected as the backend during setup.
-
-5. **Verify Docker Installation**:  
-   - Open **CMD** or **PowerShell**.
-   - Check the Docker version:
-     ```bash
-     docker --version
-     ```
-   - You should see something like:
-     ```
-     Docker version XX.XX.X, build XXXXXXX
-     ```
-
-6. **Run a Test Container**:  
-   Verify that Docker is working correctly by running a test container:
-   ```bash
-   docker run hello-world
-
